@@ -1,0 +1,63 @@
+# Page snapshot
+
+```yaml
+- text: 🚀 MAIN APP.TSX LOADED - FULL NAVIGATION INTERFACE - 1:11:17 PM
+- banner:
+  - text: 🧠
+  - heading "Consciousness Platform" [level=1]
+  - paragraph: Advanced AI-powered consciousness exploration
+- navigation:
+  - heading "Navigation" [level=2]
+  - tab "🤖 Agents" [selected]
+  - tab "🌟 Showcase"
+  - tab "🧠 Dashboard"
+  - tab "💬 AI Chat"
+  - tab "⌨️ CLI"
+  - tab "🤝 Workspace"
+  - tab "👥 Collaborate"
+  - tab "🎯 Intentions"
+  - tab "👁️ Visualize"
+- main:
+  - heading "🤖 Agent Management Dashboard" [level=1]
+  - paragraph: Monitor and coordinate agentic intelligence systems
+  - button "📊 Overview"
+  - button "🧠 Evolution"
+  - button "🌐 Communication"
+  - button "🎭 Orchestration"
+  - button "📈 Analytics"
+  - heading "Active Agents" [level=3]
+  - text: 🤖 1 of 3 total
+  - heading "Collaborations" [level=3]
+  - text: 🤝 1 active sessions
+  - heading "Avg Consciousness" [level=3]
+  - text: 🧠 82.7% consciousness level
+  - heading "Trust Score" [level=3]
+  - text: 🛡️ 91.3% average trust
+  - heading "🤖 Registered Agents" [level=2]
+  - button "+ Create Agent"
+  - text: 🟢
+  - heading "Consciousness Analyzer" [level=3]
+  - paragraph: consciousness-agent-001
+  - text: ACTIVE 87% consciousness
+  - paragraph: 📋 Analyzing user intention patterns
+  - text: consciousness-analysis intention-inference pattern-recognition
+  - button "💬 Chat"
+  - text: 🔄
+  - heading "Gentle Guidance Coordinator" [level=3]
+  - paragraph: guidance-agent-002
+  - text: PROCESSING 82% consciousness
+  - paragraph: 📋 Generating personalized guidance recommendations
+  - text: gentle-guidance adaptive-communication user-profiling
+  - button "💬 Chat"
+  - text: 🟡
+  - heading "Collaboration Orchestrator" [level=3]
+  - paragraph: collab-agent-003
+  - text: IDLE 79% consciousness multi-agent-coordination workflow-orchestration conflict-resolution
+  - button "💬 Chat"
+  - heading "🤝 Active Collaborations" [level=2]
+  - heading "Enhanced user intention analysis with personalized guidance" [level=3]
+  - text: ACTIVE Progress 67% complete Consciousness Analyzer Gentle Guidance Coordinator
+- contentinfo:
+  - paragraph: Consciousness Platform v1.0.0 - Debug Mode
+  - paragraph: "Status: Basic UI loaded successfully. Consciousness systems debugging in progress."
+```

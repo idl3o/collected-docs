@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find:*)",
+      "Bash(mkdir:*)",
+      "Bash(cp:*)",
+      "Bash(robocopy:*)",
+      "Bash(powershell:*)",
+      "Bash(copy:*)",
+      "Bash(xcopy:*)",
+      "Bash(del \"C:\\Users\\Sam\\Documents\\coding projs\\info distillation\\copy_md_files.ps1\")",
+      "Bash(rm:*)"
+    ],
+    "deny": []
+  }
+}
