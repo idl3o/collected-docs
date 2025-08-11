@@ -1,8 +1,42 @@
-# Information Distillation Project
+# 📚 Technical Documentation Collection - GitHub Pages
 
-## 📚 Technical Documentation Collection
+**AI Consciousness Research Archive featuring 2,110+ files from 23 major projects**
 
-A comprehensive collection of **2,110+ technical documents** extracted from multiple research and development projects, focusing on AI consciousness research, knowledge management systems, blockchain integration, and advanced web platforms.
+🔗 **Live Site**: [View Documentation Browser](https://your-username.github.io/info-distillation) *(Update with your GitHub username)*
+
+## 🌟 Interactive Documentation Browser
+
+This repository provides a modern, responsive documentation browser with advanced search, dark/light themes, offline support, and keyboard navigation for exploring the comprehensive collection of technical documents.
+
+### ⚡ Browser Features
+
+- **📱 Responsive Design** - Works perfectly on desktop, tablet, and mobile
+- **🔍 Advanced Search** - Find documents across all projects instantly  
+- **🌓 Dark/Light Theme** - Toggle with keyboard shortcut (Ctrl/Cmd + D)
+- **📶 Offline Support** - Service worker enables offline browsing
+- **⌨️ Keyboard Navigation** - Full keyboard shortcuts support
+- **📊 Project Organization** - Expandable sections with file counts
+- **🎯 Smart Navigation** - Cross-linking and breadcrumb support
+
+### 🚀 Quick Start
+
+1. **Fork this repository** to your GitHub account
+2. **Enable GitHub Pages** in Settings → Pages → Source: "Deploy from a branch"
+3. **Access your site** at `https://your-username.github.io/info-distillation`
+
+Or run locally:
+```bash
+python server.py  # Then visit http://localhost:8000
+```
+
+### 🎮 Keyboard Shortcuts
+
+| Shortcut | Action |
+|----------|--------|
+| `Ctrl/Cmd + K` | Focus search input |
+| `Ctrl/Cmd + D` | Toggle dark/light theme |
+| `Ctrl/Cmd + B` | Toggle sidebar |
+| `Escape` | Close search results |
 
 ### 🎯 **Project Overview**
 

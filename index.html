@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation Collection - AI Consciousness Research Archive</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-markdown.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h1>📚 Docs Archive</h1>
+                <p class="subtitle">AI Consciousness Research</p>
+                <div class="stats">
+                    <span class="stat-item">2,110+ Files</span>
+                    <span class="stat-item">23 Projects</span>
+                </div>
+            </div>
+            
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search documentation..." autocomplete="off">
+                <div id="searchResults" class="search-results"></div>
+            </div>
+            
+            <div class="project-nav" id="projectNav">
+                <div class="nav-section">
+                    <h3>🏠 Overview</h3>
+                    <a href="#" onclick="loadFile('collected-docs/DOCUMENTATION-INDEX.md')" class="nav-item active">
+                        Collection Index
+                    </a>
+                </div>
+
+                <div class="nav-section">
+                    <h3>🧠 AI Consciousness</h3>
+                    <div class="nav-subsection">
+                        <a href="#" onclick="toggleSection('cli-project')" class="nav-item expandable">
+                            CLI Project <span class="file-count">(453 files)</span>
+                        </a>
+                        <div id="cli-project-files" class="file-list"></div>
+                    </div>
+                    <div class="nav-subsection">
+                        <a href="#" onclick="toggleSection('intelligent-notes-app')" class="nav-item expandable">
+                            Intelligent Notes App <span class="file-count">(682 files)</span>
+                        </a>
+                        <div id="intelligent-notes-app-files" class="file-list"></div>
+                    </div>
+                    <div class="nav-subsection">
+                        <a href="#" onclick="toggleSection('consciousness-research')" class="nav-item expandable">
+                            Consciousness Research <span class="file-count">(3 files)</span>
+                        </a>
+                        <div id="consciousness-research-files" class="file-list"></div>
+                    </div>
+                </div>
+
+                <div class="nav-section">
+                    <h3>🌍 Wisdom Platforms</h3>
+                    <div class="nav-subsection">
+                        <a href="#" onclick="toggleSection('human-flourishing')" class="nav-item expandable">
+                            Human Flourishing <span class="file-count">(15 files)</span>
+                        </a>
+                        <div id="human-flourishing-files" class="file-list"></div>
+                    </div>
+                </div>
+
+                <div class="nav-section">
+                    <h3>⚡ Development Tools</h3>
+                    <div class="nav-subsection">
+                        <a href="#" onclick="toggleSection('cli-workspace')" class="nav-item expandable">
+                            CLI Workspace <span class="file-count">(8 files)</span>
+                        </a>
+                        <div id="cli-workspace-files" class="file-list"></div>
+                    </div>
+                </div>
+
+                <div class="nav-section">
+                    <h3>🔬 Research Platforms</h3>
+                    <div class="nav-subsection">
+                        <a href="#" onclick="toggleSection('c-r-p')" class="nav-item expandable">
+                            C-R-P (Merkle) <span class="file-count">(9 files)</span>
+                        </a>
+                        <div id="c-r-p-files" class="file-list"></div>
+                    </div>
+                </div>
+
+                <div class="nav-section">
+                    <h3>🔗 Blockchain</h3>
+                    <div class="nav-subsection">
+                        <a href="#" onclick="toggleSection('helia-blockchain')" class="nav-item expandable">
+                            HELIA Blockchain <span class="file-count">(30 files)</span>
+                        </a>
+                        <div id="helia-blockchain-files" class="file-list"></div>
+                    </div>
+                    <div class="nav-subsection">
+                        <a href="#" onclick="toggleSection('helia-blockchain-token')" class="nav-item expandable">
+                            HELIA Token <span class="file-count">(1 file)</span>
+                        </a>
+                        <div id="helia-blockchain-token-files" class="file-list"></div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <main class="main-content">
+            <div class="content-header">
+                <div class="breadcrumb" id="breadcrumb">
+                    <span>Documentation Index</span>
+                </div>
+                <div class="content-actions">
+                    <button onclick="toggleTheme()" class="theme-toggle" title="Toggle theme">🌓</button>
+                    <button onclick="toggleSidebar()" class="sidebar-toggle" title="Toggle sidebar">☰</button>
+                </div>
+            </div>
+            
+            <div class="content-body" id="content">
+                <div class="loading">Loading documentation...</div>
+            </div>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

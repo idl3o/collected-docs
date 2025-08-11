@@ -1,0 +1,26 @@
+title: "Technical Documentation Collection"
+description: "AI Consciousness Research Archive - 2,110+ Files from 23 Projects"
+url: ""
+baseurl: ""
+
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+exclude:
+  - README.md
+  - server.py
+  - .git
+  - .gitignore
+  
+include:
+  - _headers
+  - sw.js
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
