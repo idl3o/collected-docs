@@ -11,7 +11,8 @@
       "Bash(del \"C:\\Users\\Sam\\Documents\\coding projs\\info distillation\\copy_md_files.ps1\")",
       "Bash(rm:*)",
       "Bash(python:*)",
-      "Bash(curl:*)"
+      "Bash(curl:*)",
+      "Bash(mv:*)"
     ],
     "deny": []
   }
