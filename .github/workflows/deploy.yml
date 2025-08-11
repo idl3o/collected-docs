@@ -1,10 +1,9 @@
-name: Deploy to GitHub Pages
+name: Deploy Static Site to GitHub Pages
 
 on:
   push:
     branches: [ main, master ]
-  pull_request:
-    branches: [ main, master ]
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -25,14 +24,28 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v3
         
-      - name: Build with Jekyll
-        uses: actions/jekyll-build-pages@v1
-        with:
-          source: ./
-          destination: ./_site
+      - name: Fix encoding issues
+        run: |
+          # Convert any problematic files to UTF-8
+          find collected-docs -name "*.md" -type f -exec file -i {} \; | grep -v utf-8 | cut -d: -f1 | while read file; do
+            echo "Converting $file to UTF-8"
+            iconv -f UTF-16 -t UTF-8 "$file" > "$file.tmp" && mv "$file.tmp" "$file" || echo "Could not convert $file, removing..."
+            if [ ! -s "$file" ]; then
+              echo "# File had encoding issues and was cleaned" > "$file"
+            fi
+          done
+          
+      - name: Create site directory
+        run: |
+          mkdir -p _site
+          cp -r * _site/ || true
+          # Remove files that shouldn't be deployed
+          rm -f _site/server.py _site/DEPLOYMENT.md _site/.gitignore
           
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
+        with:
+          path: _site
 
   deploy:
     environment:

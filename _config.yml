@@ -3,24 +3,58 @@ description: "AI Consciousness Research Archive - 2,110+ Files from 23 Projects"
 url: ""
 baseurl: ""
 
+# Encoding settings
+encoding: utf-8
+
+# Build settings
 markdown: kramdown
 highlighter: rouge
-theme: minima
+
+# Don't use a theme - we have custom HTML/CSS
+# theme: minima
 
 plugins:
   - jekyll-feed
   - jekyll-sitemap
 
+# Exclude problematic files and unnecessary content
 exclude:
   - README.md
   - server.py
   - .git
   - .gitignore
+  - DEPLOYMENT.md
+  - "*.tmp"
+  - "*.temp"
+  - node_modules
+  - vendor
+  - .bundle
+  - .sass-cache
+  - .jekyll-cache
+  - Gemfile
+  - Gemfile.lock
   
 include:
   - _headers
   - sw.js
 
+# Kramdown settings with encoding handling
 kramdown:
   input: GFM
   syntax_highlighter: rouge
+  hard_wrap: false
+  auto_ids: true
+  entity_output: as_char
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+
+# Safe mode and encoding
+safe: false
+source: .
+destination: _site
+
+# Don't process these as Jekyll files - serve as static files
+defaults:
+  - scope:
+      path: "collected-docs"
+    values:
+      sitemap: false
