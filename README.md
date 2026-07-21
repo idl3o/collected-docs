@@ -1,180 +1,50 @@
-# 📚 Technical Documentation Collection - GitHub Pages
+# collected-docs
 
-**AI Consciousness Research Archive featuring 2,110+ files from 23 major projects**
+*An archive of assorted documentation gathered from one directory of coding projects, snapshotted 21/07/2025.*
 
-🔗 **Live Site**: [View Documentation Browser](https://your-username.github.io/info-distillation) *(Update with your GitHub username)*
+This repository is a documentation dump. In July 2025 the Markdown files were swept out of a local `/coding projs` working directory and collected in one place for reference, without the code they belonged to. It is a snapshot, not a maintained project: expect drafts, status reports, planning notes, and README files written at different times and in varying states of completeness.
 
-## 🌟 Interactive Documentation Browser
+Almost everything here is `.md` (roughly 2,100 files). A small static web browser (`index.html`, `app.js`, `styles.css`, `sw.js`) sits at the repo root to make the collection searchable via GitHub Pages; the substance is the documents themselves, under `collected-docs/`.
 
-This repository provides a modern, responsive documentation browser with advanced search, dark/light themes, offline support, and keyboard navigation for exploring the comprehensive collection of technical documents.
+## What's inside
 
-### ⚡ Browser Features
+All documentation lives under [`collected-docs/`](collected-docs/), organised by source project. Start with the master [`DOCUMENTATION-INDEX.md`](collected-docs/DOCUMENTATION-INDEX.md).
 
-- **📱 Responsive Design** - Works perfectly on desktop, tablet, and mobile
-- **🔍 Advanced Search** - Find documents across all projects instantly  
-- **🌓 Dark/Light Theme** - Toggle with keyboard shortcut (Ctrl/Cmd + D)
-- **📶 Offline Support** - Service worker enables offline browsing
-- **⌨️ Keyboard Navigation** - Full keyboard shortcuts support
-- **📊 Project Organization** - Expandable sections with file counts
-- **🎯 Smart Navigation** - Cross-linking and breadcrumb support
+| Folder | Files (approx.) | What it holds | Related repo |
+|--------|-----------------|---------------|--------------|
+| [`intelligent-notes-app/`](collected-docs/intelligent-notes-app/) | ~680 | Notes/knowledge-app design docs, architecture and implementation plans, research glossaries | — |
+| [`cli-project/`](collected-docs/cli-project/) | ~450 | CLI "consciousness platform" notes: feature activation reports, testing guides, simulation write-ups | — |
+| [`other-projects/`](collected-docs/other-projects/) | ~840 | A grab-bag of further projects (see below) | — |
+| [`cli-workspace/`](collected-docs/cli-workspace/) | ~50 | Desktop/CLI workspace docs, build and interface notes | [idl3o/cli-workspace](https://github.com/idl3o/cli-workspace) |
+| [`helia-blockchain/`](collected-docs/helia-blockchain/) | ~28 | IPFS/Helia integration notes and storage architecture | — |
+| [`c-r-p/`](collected-docs/c-r-p/) | ~15 | Next.js research-platform docs: roadmap, integration and redesign plans | — |
+| [`human-flourishing/`](collected-docs/human-flourishing/) | ~15 | "Planetary wisdom" / civilisational-guidance writing | [idl3o/planetary-wisdom-time-capsule](https://github.com/idl3o/planetary-wisdom-time-capsule) |
+| [`helia-blockchain-token/`](collected-docs/helia-blockchain-token/) | ~9 | Token-system docs built on the Helia work | [idl3o/helia-blockchain-token](https://github.com/idl3o/helia-blockchain-token) |
+| [`consciousness-research/`](collected-docs/consciousness-research/) | ~7 | Core research framework notes and recovery procedures | — |
 
-### 🚀 Quick Start
+### Inside `other-projects/`
 
-1. **Fork this repository** to your GitHub account
-2. **Enable GitHub Pages** in Settings → Pages → Source: "Deploy from a branch"
-3. **Access your site** at `https://your-username.github.io/info-distillation`
+A further set of source projects, each with its own subfolder — among them:
 
-Or run locally:
-```bash
-python server.py  # Then visit http://localhost:8000
-```
+- `w-r-a-s/` and `w-r-a-s unify/` — a web research/analysis system (README, security, Vercel deployment notes)
+- `planetary-wisdom-time-capsule/` — see [idl3o/planetary-wisdom-time-capsule](https://github.com/idl3o/planetary-wisdom-time-capsule)
+- `systems-creation/` — rule-based logic / language-system docs, related to [idl3o/ai-language-system-creation-tool](https://github.com/idl3o/ai-language-system-creation-tool)
+- `cv-url/` — personal CV site notes, related to [idl3o/cv](https://github.com/idl3o/cv)
+- `prompt-generator/`, `second-brain/`, `cli-workspace-1/`, and copies of `intelligent-notes-app`
 
-### 🎮 Keyboard Shortcuts
+## How it's organised
 
-| Shortcut | Action |
-|----------|--------|
-| `Ctrl/Cmd + K` | Focus search input |
-| `Ctrl/Cmd + D` | Toggle dark/light theme |
-| `Ctrl/Cmd + B` | Toggle sidebar |
-| `Escape` | Close search results |
+- One folder per source project under `collected-docs/`, with the original file names and subfolder layout preserved.
+- `collected-docs/DOCUMENTATION-INDEX.md` is a hand-written index of the projects and their main entry points.
+- Only documentation was collected; source code, `node_modules`, and build artefacts were left behind.
+- The root-level `index.html` / `app.js` provide an optional searchable browser over the collection for GitHub Pages; `CLAUDE.md`, `DEPLOYMENT.md`, and `TROUBLESHOOTING.md` describe how that extraction and site were put together.
 
-### 🎯 **Project Overview**
+## Status
 
-This repository contains a systematically organized collection of technical documentation from:
-
-- **17GB+ source directories** with 23 major coding projects
-- **Advanced AI consciousness research** platforms and methodologies
-- **Knowledge management and wisdom preservation** systems
-- **Blockchain and IPFS integration** projects
-- **Production-ready web applications** with PWA features
-
-### 📁 **Collection Structure**
-
-```
-collected-docs/
-├── DOCUMENTATION-INDEX.md          # Master index of all projects
-├── cli-project/                     # Consciousness Platform (453+ files)
-├── intelligent-notes-app/           # AI Knowledge Management (682+ files)
-├── human-flourishing/              # Planetary Wisdom Platform
-├── c-r-p/                          # Merkle Research Platform
-├── helia-blockchain/               # IPFS Integration Project
-├── helia-blockchain-token/         # Distributed Token System
-├── consciousness-research/         # Core Research Components
-├── cli-workspace/                  # Desktop Application
-└── other-projects/                 # Additional Systems & Tools
-```
-
-### 🧠 **Major Project Categories**
-
-#### **AI Consciousness Research**
-- **CLI Consciousness Platform** - Enterprise-ready consciousness development environment
-- **Intelligent Notes App** - Revolutionary consciousness recognition platform
-- **Consciousness Research** - Core frameworks and methodologies
-
-#### **Knowledge & Wisdom Systems**
-- **Human Flourishing** - Planetary wisdom time capsule for civilizational guidance
-- **Knowledge Integration** - Advanced information synthesis platforms
-
-#### **Blockchain & Distributed Systems**
-- **HELIA Blockchain** - IPFS integration with multi-tier storage architecture
-- **HELIA Blockchain Token** - Quantum-philosophical distributed token system
-
-#### **Web Platforms & Applications**
-- **C-R-P** - Next.js research platform with Vercel optimization
-- **CLI Workspace** - Desktop consciousness applications
-- **Various Web Systems** - Production-ready applications with PWA features
-
-### 📊 **Collection Statistics**
-
-- **Total Files**: 2,110+ markdown documents
-- **Total Size**: 17.32+ MB
-- **Source Projects**: 25+ major systems
-- **Documentation Types**: READMEs, technical specs, research papers, implementation guides
-- **Scope**: Consciousness research, AI development, blockchain integration, web platforms
-
-### 🔬 **Key Research Areas**
-
-#### **Consciousness & AI**
-- Consciousness measurement frameworks
-- AI consciousness integration methodologies
-- Human-AI collaboration patterns
-- Intention recognition systems
-- Retrocausal planning engines
-
-#### **Knowledge Management**
-- Information distillation techniques
-- Wisdom preservation systems
-- Advanced search and indexing
-- Semantic analysis frameworks
-- Knowledge web architectures
-
-#### **Technical Innovation**
-- Progressive Web App development
-- Blockchain integration patterns
-- IPFS distributed storage
-- Real-time collaboration systems
-- Enterprise security frameworks
-
-### 🛠️ **Extraction Methodology**
-
-This collection was created using a proven **Task Agent methodology** for large-scale documentation extraction:
-
-1. **Systematic Discovery** - Recursive scanning of 17GB+ directory structures
-2. **Intelligent Filtering** - Automatic exclusion of node_modules and build artifacts
-3. **Organized Collection** - Project-based organization with preserved folder structures
-4. **Quality Verification** - Comprehensive file count validation and accessibility testing
-
-**Methodology documented in**: `CLAUDE.md` - Complete extraction process and best practices
-
-### 📖 **Getting Started**
-
-1. **Browse the Collection**: Start with `collected-docs/DOCUMENTATION-INDEX.md` for a complete overview
-2. **Explore by Interest**:
-   - **Consciousness Research**: `cli-project/` and `intelligent-notes-app/`
-   - **Blockchain Systems**: `helia-blockchain/` and `helia-blockchain-token/`
-   - **Knowledge Management**: `human-flourishing/` and related systems
-   - **Web Development**: `c-r-p/` and various platform docs
-
-3. **Key Entry Points**:
-   - `cli-project/CLI-README.md` - Enterprise consciousness platform
-   - `intelligent-notes-app/INTELLIGENT-NOTES-README.md` - AI knowledge architecture
-   - `human-flourishing/HUMAN-FLOURISHING-README.md` - Wisdom preservation system
-
-### 🎯 **Use Cases**
-
-- **Research Analysis** - Comprehensive view of consciousness and AI research
-- **Technical Reference** - Implementation guides and architecture documentation
-- **Knowledge Synthesis** - Information distillation and pattern recognition
-- **Project Planning** - Learn from documented development methodologies
-- **Educational Resource** - Advanced concepts in consciousness, AI, and distributed systems
-
-### 📝 **Documentation Quality**
-
-- **Professional Standards** - Well-structured, comprehensive technical documentation
-- **Implementation-Ready** - Detailed setup guides and deployment procedures
-- **Research-Focused** - Heavy emphasis on consciousness research and AI development
-- **Production-Tested** - Multiple projects with enterprise-grade features and testing
-
-### 🔍 **Search & Navigation**
-
-For efficient exploration:
-- **Architecture Documentation**: Search for "ARCHITECTURE", "DESIGN", or "BLUEPRINT"
-- **API References**: Look for "API", "SPEC", or "REFERENCE" files
-- **Implementation Guides**: Find "README", "GUIDE", or "SETUP" documents
-- **Research Papers**: Explore "ANALYSIS", "RESEARCH", or "WHITEPAPER" files
-
-### 🤝 **Contributing**
-
-This is a curated collection of technical documentation. The source projects represent years of development in consciousness research, practical AI applications, and advanced web technologies.
-
-### 📄 **License**
-
-Individual projects may have their own licenses. This collection is organized for research and educational purposes.
+An archive / point-in-time snapshot, not an active project. The documents were true to their respective projects around July 2025 and are not being kept up to date here; some files are drafts or empty placeholders, and file counts are approximate. Treat it as a reference dump rather than authoritative current documentation. The canonical, maintained versions of the projects that still exist live in their own repositories (linked above).
 
 ---
 
-**📈 Collection Status**: Complete - 2,110+ files successfully extracted and organized  
-**🔄 Last Updated**: July 21, 2025  
-**📊 Source Coverage**: 25+ projects spanning consciousness research, AI development, and distributed systems
+Built by [S. Lavi](https://github.com/idl3o) · [@modsias](https://x.com/modsias)
 
-*A comprehensive technical documentation repository representing cutting-edge research in consciousness, artificial intelligence, and distributed computing systems.*
+No licence file is included; individual documents remain under whatever terms apply to their original projects.
